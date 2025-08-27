@@ -1,0 +1,15 @@
+services:
+  first_api:
+    container_name: first_api
+    build:
+      dockerfile: api_1/Dockerfile
+    ports:
+      - "8000:8000"
+
+  second_api:
+    container_name: second_api
+    build:
+      dockerfile: api_2/Dockerfile
+    ports:
+      - "8001:8001"
+
